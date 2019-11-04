@@ -1,2 +1,7 @@
-﻿  mod1.cpp
+﻿  Source.cpp
+A:\GitHub\mod1\ConsoleApplication4\Source.cpp(88,17): warning C4018:  >: несоответствие типов со знаком и без знака
+A:\GitHub\mod1\ConsoleApplication4\Source.cpp(93,20): warning C4018:  <: несоответствие типов со знаком и без знака
+  mod1.cpp
+  Создание кода...
+A:\GitHub\mod1\ConsoleApplication4\Source.cpp(104,20): warning C4018:  <: несоответствие типов со знаком и без знака
   ConsoleApplication4.vcxproj -> A:\GitHub\mod1\ConsoleApplication4\Debug\ConsoleApplication4.exe

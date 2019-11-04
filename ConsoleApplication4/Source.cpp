@@ -1,44 +1,44 @@
 #include "Header.h"
 #include<iostream>
 using namespace std;
-//int m1()
-//{
-//	setlocale(LC_ALL, "Russian");
-//
-//	double total = 0;
-//	double eps;
-//	cout << "eps= ";
-//	cin >> eps;
-//
-//	for (long i = 0;; i++)
-//	{
-//		double a = 1;
-//		if (i != 0)
-//		{
-//			long k = i;
-//			while (k >= 1) { a = -2 * a; k--; }
-//		}
-//		else(a = 1);
-//		double b = 1;
-//		for (long j = 0; ; j++)
-//		{
-//			if (j != 0)
-//			{
-//				long e = j;
-//				while (e >= 1) { b = b * e; e--; }
-//			}break;
-//			if (j == 0) { b = 1; }break;
-//		}
-//
-//		double sum = 0;
-//		sum = a / b;
-//		while (abs(total) > eps) { total = total + sum; }
-//		if (abs(total) < eps) { cout << "Ñóììà= " << total << endl; }break;
-//
-//	}
-//
-//	return 0;
-//}
+int thebest1()
+{
+	setlocale(LC_ALL, "Russian");
+
+	double total = 0;
+	double eps;
+	cout << "eps= ";
+	cin >> eps;
+
+	for (long i = 0;; i++)
+	{
+		double a = 1.0;
+		if (i != 0)
+		{
+			long k = i;
+			while (k >= 1) { a = -2 * a; k--; }
+		}
+		else(a = 1.0);
+		double b = 1.0;
+		for (long j = i; ; j++)
+		{
+			if (j != 0)
+			{
+				long e = j;
+				while (e >= 1) { b = b * e; e--; }
+			}break;
+			if (j == 0) { b = 1; }break;
+		}
+
+		double sum = 0;
+		sum = a / b;
+		if (abs(sum) > eps) { total = total + sum; }
+		else if (abs(sum) <= eps) { break; }
+	}
+	cout << "Ñóììà= " << total << endl;
+	return 0;
+}
+
 double fact(int i)
 {
 	if (i == 0) return 1;
