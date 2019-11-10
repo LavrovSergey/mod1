@@ -1,4 +1,5 @@
 #include "Header.h"
+#include <conio.h>
 #include<iostream>
 using namespace std;
 int thebest1()
@@ -36,7 +37,11 @@ int thebest1()
 		else if (abs(sum) <= eps) { break; }
 	}
 	cout << "Сумма= " << total << endl;
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }
 
 double fact(int i)
@@ -68,7 +73,11 @@ int m1() {
 	cout << "Результат: ";
 	cout << sum(eps);
 	cout << endl;
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }
 int m3()
 {
@@ -93,7 +102,11 @@ int m3()
 	for (int i = 0; i < strlen(s2); i++) {
 		if (s2[i] == s1[k - 1]) { cout << i + 1 << " - номер первого вхождения сивола из первой строки во вторую"; break; }
 	}
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }
 int m4()
 {
@@ -118,7 +131,11 @@ int m4()
 			}
 		}break;
 	}
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }
 int m5()
 {
@@ -166,7 +183,7 @@ int m5()
 	int min = 0;
 	for (int i = 0; i < m; i++)
 	{
-		for (int j = 0; j < n; j++)
+		for (int j = n-1; j  >=0; j--)
 		{
 			min = s[j];
 			for (int k = j; k < n; ++k)
@@ -199,6 +216,9 @@ int m5()
 	}
 	delete[] mas;
 
-
-	return 0;
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
 }

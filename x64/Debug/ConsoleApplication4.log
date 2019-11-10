@@ -1,4 +1,9 @@
 ﻿  mod1.cpp
   Source.cpp
   Создание кода...
+A:\GitHub\mod1\Source.cpp(110): warning C4715:  m3: значение возвращается не при всех путях выполнения
+A:\GitHub\mod1\Source.cpp(81): warning C4715:  m1: значение возвращается не при всех путях выполнения
+A:\GitHub\mod1\Source.cpp(139): warning C4715:  m4: значение возвращается не при всех путях выполнения
+A:\GitHub\mod1\Source.cpp(45): warning C4715:  thebest1: значение возвращается не при всех путях выполнения
+A:\GitHub\mod1\Source.cpp(224): warning C4715:  m5: значение возвращается не при всех путях выполнения
   ConsoleApplication4.vcxproj -> A:\GitHub\mod1\x64\Debug\ConsoleApplication4.exe
