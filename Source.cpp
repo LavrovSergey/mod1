@@ -108,35 +108,7 @@ int m3()
 	if (code == 32) { main(); }
 	else return 0;
 }
-int m4()
-{
-	setlocale(LC_ALL, "Russian");
-	char s[256];
-	cout << "Введите строку" << endl;
-	cin.getline(s, 256);
-	for (int i = 0; i < strlen(s); i++)
-	{
-		if (s[strlen(s) - 1] == s[i]) {
-			for (int j = i - 1; j >= 0; j--)
-			{
-				s[strlen(s)] = s[j];
-				s[strlen(s) + 1] = '\0';
-			}
-		}break;
-		if (s[strlen(s) - 2] != s[strlen(s) - 1]) {
-			for (int j = i - 1; j >= 0; j--)
-			{
-				s[strlen(s)] = s[j];
-				s[strlen(s) + 1] = '\0';
-			}
-		}break;
-	}
-	int code;
-	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
-	code = _getch();
-	if (code == 32) { main(); }
-	else return 0;
-}
+
 int m5()
 {
 	setlocale(LC_ALL, "Russian");
@@ -216,6 +188,31 @@ int m5()
 	}
 	delete[] mas;
 
+	int code;
+	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
+	code = _getch();
+	if (code == 32) { main(); }
+	else return 0;
+}
+void makePalindrome(char* str) {
+	int first = 0, last = strlen(str) - 1;
+	while (first < last) {
+		int a = first, b = last;
+		while (a < b) { if (str[a] != str[b]) break; a++; b--; }
+		if (a < b) first++; else break;
+	}
+	while (first > 0) str[++last] = str[--first];
+	str[++last] = '\0';
+}
+
+int m4()
+{
+	setlocale(LC_ALL, "Russian");
+	char str[256];
+	cout << "Введите слово" << endl;
+	cin.getline(str, 256);
+	makePalindrome(str);
+	cout << str<<endl;
 	int code;
 	cout << "Если хотите вернуться в меню, нажмите ПРОБЕЛ";
 	code = _getch();
